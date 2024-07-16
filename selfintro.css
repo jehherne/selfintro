@@ -1,57 +1,217 @@
 body,html{
-    padding:0%;
-    margin: 0%;
+    padding:0;
+    margin: 0;
     width:100%;
     height:100%;
+    overflow-x: hidden;
 }
 .first{
     display: grid;
-    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 35% 25% 25%;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logopic{
+    width:15%;
+    border: 1% black solid;
+    border-radius: 20%;
+    place-items: center;
+    top:5%;
+}
+
+.phone, .email{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.subphone p, .subemail p{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.phone img,.email img{
+    width:20%;
+    position: relative;
+    top:10%;
+    left:40%;
+}
+.first p{
+    text-align: justify;
+    font-size: 80%;
+    position: relative;
+    bottom: 10%;
+}
+@media screen and (min-width:750px){
+    .first{
+        display: grid;
+        grid-template-columns: 30% 35% 35%;
+    }
+    #logopic{
+        position: relative;
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-bottom: 1%;
+        border: 1% black solid;
+        border-radius: 20%;
+        width:30%;
+        top:90%;
+    }
+    .first img{
+        width:15%;
+        align-self: center;
+    }
+    .first p{
+        text-align: justify;
+        font-size: 100%;
+        position: relative;
+        bottom: 10%;
+    }
+    .phone, .email{
+        display:grid;
+        grid-template-columns: 20% 80%;
+        padding-bottom: 1%;
+    }
+    .subphone p, .subemail p{
+        position: relative;
+        top:12%;
+        word-wrap: break-word;
+    }
+    .phone img,.email img{
+        width:60%;
+    }
+}
+
+
 .second{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 30% 22.5%;
     background-color: black;
-}
-.second img{
-    padding-top: 10%;
+    width: 110vw;
 }
 .second p{
     color:white;
-}
-#logopic{
+    font-size: 85%;
     position: relative;
-    margin-top: 1%;
-    margin-left: 1%;
-    margin-bottom: 1%;
-    border: 1% black solid;
-    border-radius: 20%;
-}
-.first img{
-    width:15%;
-    align-self: center;
-}
-.phone, .email{
-    display:grid;
-    grid-template-columns: 25% 75%;
-    padding-bottom: 1%;
-}
-.phone p, .email p{
-    position: relative;
-    top:12%;
-}
-.phone img,.email img{
-    width:60%;
-}
-.second p{
-    font-size: 90%;
+    top:15%;
+    left:5%;
 }
 .subsecond{
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 20% 80%;
+    padding-left: 15%;
 }
 .second img{
-    width:90%;
+    position: relative;
+    top:35%;
+    width:100%;
+}
+@media screen and (min-width:750px){
+    .second p{
+        font-size:100%;
+        position: relative;
+        top:5%;
+    }
+    .subsecond img{
+        position: relative;
+        top:0%;
+    }
+}
+
+.autotype{
+    color:yellow;
+}
+.aboutus h1{
+    font-size: 100%;
+    color:rgb(218, 240, 19);
+}
+#line{
+    border-bottom: .2em solid rgb(218, 240, 19);
+    padding-bottom: .3%;
+}
+.aboutus img{
+    width:100%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.aboutus{
+    width:100vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 5%;
+}
+.aboutustext{
+    font-size: 75%;
+    display: block;
+    padding-left: 5%;
+}
+@media screen and (min-width:750px){
+    .aboutus{
+        width:100vw;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding-top: 5%;
+    }
+    .aboutus img{
+        width:100%;
+        padding-left: 8%;
+        padding-top: 8%;
+    }
+    .aboutustext{
+        font-size: 155%;
+        display: block;
+        padding-left: 15%;
+        position: relative;
+        top:8%;
+    }
+}
+
+.aboutus2{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.aboutus2 p{
+    padding-left: 5%;
+}
+.aboutus2 img{
+    width:70%;
+}
+.education{
+    list-style-image: url('book.svg');
+}
+.skills{
+    list-style-image:url('check-square.svg');
+}
+.aboutus2 button{
+    margin-top: 220%;
+    width:70%;
+    border:black dotted 1px;
+}
+.aboutus2 button:hover{
+    border: yellow solid 2px;
+    color:rgb(184, 184, 13);
+    background-color: aquamarine;
+}
+@media screen and (min-width:750px){
+    .aboutus2 p,.aboutus2 ul{
+        font-size: 20px;
+        padding-left: 5%;
+    }
+    .aboutus2 img{
+        height:50%;
+    }
+    .aboutus2 button{
+        margin-top: auto;
+        height:10%;
+        border:black dotted 1px;
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: .5s;
+        transition-delay: .2s;
+    }
+    #button{
+        padding-bottom: 180%;
+    }
 }
 
 
