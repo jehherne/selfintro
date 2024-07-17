@@ -5,43 +5,22 @@ body,html{
     height:100%;
     overflow-x: hidden;
 }
-.first{
-    display: grid;
-    grid-template-rows: 35% 25% 25%;
-}
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2%;
 }
 #logopic{
     width:15%;
     border: 1% black solid;
     border-radius: 20%;
     place-items: center;
-    top:5%;
+}
+.phone,.email{
+    display: none;
 }
 
-.phone, .email{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-.subphone p, .subemail p{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.phone img,.email img{
-    width:20%;
-    position: relative;
-    top:10%;
-    left:40%;
-}
-.first p{
-    text-align: justify;
-    font-size: 80%;
-    position: relative;
-    bottom: 10%;
-}
 @media screen and (min-width:750px){
     .first{
         display: grid;
@@ -51,11 +30,9 @@ body,html{
         position: relative;
         margin-top: 1%;
         margin-left: 1%;
-        margin-bottom: 1%;
         border: 1% black solid;
         border-radius: 20%;
-        width:30%;
-        top:90%;
+        width:30%; 
     }
     .first img{
         width:15%;
@@ -63,7 +40,7 @@ body,html{
     }
     .first p{
         text-align: justify;
-        font-size: 100%;
+        font-size: 130%;
         position: relative;
         bottom: 10%;
     }
@@ -84,48 +61,49 @@ body,html{
 
 
 .second{
-    display: grid;
-    grid-template-columns: 20% 20% 30% 22.5%;
+    display: flex;
     background-color: black;
-    width: 110vw;
-}
-.second p{
-    color:white;
-    font-size: 85%;
-    position: relative;
-    top:15%;
-    left:5%;
 }
 .subsecond{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    padding-left: 15%;
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.subsecond a{
+    display: flex;
+    text-decoration: none;
+    font-size: 70%;
+    color:white;
 }
 .second img{
-    position: relative;
-    top:35%;
-    width:100%;
+    width:30%;
 }
 @media screen and (min-width:750px){
     .second p{
         font-size:100%;
         position: relative;
-        top:5%;
+        bottom:25%;
     }
-    .subsecond img{
-        position: relative;
-        top:0%;
+
+    .subsecond a{
+        display: flex;
+        text-decoration: none;
+        font-size: 150%;
+        color:white;
     }
 }
 
+
 .autotype{
-    color:yellow;
+    color:rgb(216, 216, 92);
 }
 .aboutus h1{
     font-size: 100%;
     color:rgb(218, 240, 19);
 }
-#line{
+.line{
     border-bottom: .2em solid rgb(218, 240, 19);
     padding-bottom: .3%;
 }
@@ -179,18 +157,23 @@ body,html{
 .education{
     list-style-image: url('book.svg');
 }
-.skills{
-    list-style-image:url('check-square.svg');
-}
 .aboutus2 button{
-    margin-top: 220%;
-    width:70%;
+    width:90%;
     border:black dotted 1px;
+    border-radius: 20%;
+    background-color: rgb(218, 74, 74);
+    color:white;
+    margin-top: 5%;
 }
 .aboutus2 button:hover{
     border: yellow solid 2px;
     color:rgb(184, 184, 13);
     background-color: aquamarine;
+}
+.subaboutus2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 @media screen and (min-width:750px){
     .aboutus2 p,.aboutus2 ul{
@@ -198,20 +181,83 @@ body,html{
         padding-left: 5%;
     }
     .aboutus2 img{
-        height:50%;
+        height:auto;
     }
     .aboutus2 button{
         margin-top: auto;
-        height:10%;
-        border:black dotted 1px;
         transition-property: all;
         transition-duration: .5s;
         transition-timing-function: .5s;
         transition-delay: .2s;
     }
-    #button{
-        padding-bottom: 180%;
+    #apu{
+        display: none;
     }
 }
 
 
+.myachievements{
+    display: flex;
+    padding-top: 5%;
+}
+.myachievements img{
+    width:50%;
+}
+.myachievements h1{
+    font-size: 75%;
+}
+.myachievementstext{
+    padding-left: 5%;
+}
+.myachievements li{
+    font-size: 70%;
+}
+.myachievements button{
+    width: 35%;
+    background-color:  rgb(218, 74, 74);
+    color:white;
+    border:black dotted 1px;
+    border-radius: 20%;
+}
+.myachievements button:hover{
+    border: yellow solid 2px;
+    color:rgb(184, 184, 13);
+    background-color: aquamarine;
+}
+.achieve{
+    list-style-image: url("check-square.svg");
+}
+@media screen and (min-width:750px){
+    .myachievements h1{
+        font-size: 150%;
+    }
+    .achieve{
+        font-size: 200%;
+    }
+    .myachievements button{
+        height:30%
+    }
+    #button{
+        font-size: 150%;
+    }
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formed{
+    display: grid;
+    grid-template-rows: 15% 15% 15% 40% 15%;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.form h1{
+    padding-top: 20%;
+    padding-right: 5%;
+}
+.subform{
+    margin-left: 5%;
+    margin-top: 5%;
+}
