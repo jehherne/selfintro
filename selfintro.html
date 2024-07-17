@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!doctype html>
     <html lang="en">
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-        crossorigin="anonymous"
-    />    
     <title>Jeh Herne</title>
     <link rel="icon" type="image/jpg" href="logopic.jpg">
     <link rel="stylesheet" href="selfintro.css">
@@ -25,14 +19,14 @@
         <div class="phone">
             <img src="phone.png" alt="Phone">
             <div class="subphone">
-                <p>Call Us</p>
+                <p>Call Me</p>
                 <p>011-11888692</p>
             </div>
         </div>
         <div class="email">
             <img src="mail.svg" alt="Mail">
             <div class="subemail">
-                <p>Email Us</p>
+                <p>Email Me</p>
                 <p>yeohjehherne@gmail.com</p>
             </div>
         </div>
@@ -42,7 +36,7 @@
         <div class="subsecond">
             <a href='selfintro.html'>
             <img src="home.png" alt="Home">
-            <p class="active">Home</p>
+            <p style="color:blue">Home</p>
             </a>
         </div>
         <div class="subsecond">
@@ -52,9 +46,9 @@
             </a>    
         </div>
         <div class="subsecond">
-            <a href='aboutus.html'>
+            <a href='achievements.html'>
             <img src="achievement.png" alt="Achievement">
-            <p>Achievements</p>
+            <p id="current">Achievements</p>
             </a>
         </div>
         <div class="subsecond">
@@ -113,7 +107,7 @@
         <h1><span class="line">Conta</span>ct Me</h1>
         <form action="https://formsubmit.co/yeohjehherne@gmail.com" method="POST">
             <div class="formed">
-            <input  class="subform" type="text" name="name" required placeholder="Name">
+            <input  id="subform1" class="subform" type="text" name="name" required placeholder="Name">
             <input  class="subform" type="email" name="email" required placeholder="Email">
             <input  class="subform" type="text" name="subject" required placeholder="Subject">
             <textarea  class="subform" name="msg" required placeholder="Message"></textarea>
@@ -122,17 +116,31 @@
             <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
-    <script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"
-    ></script>
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"
-    ></script>
+    <div class="ending">
+        <div class="logo">
+            <img src="logopic.jpg" alt="Logo" onclick="location.reload()">
+        </div>
+        <div class="getintouch">
+            <p>Get In Touch</p>
+            <ul>
+                <li class="map">Malaysia</li>
+                <li class="phones">011-11888692</li>
+                <li class="mails">yeohjehherne@gmail.com</li>
+            </ul>
+        </div>
+        <div class="popularlinks">
+        <p>Popular Links</p>
+        <ul>
+            <li class="arrow"><a href="selfintro.html">Home</a></li>
+            <li class="arrow"><a href="aboutus.html">About Me</a></li>
+            <li class="arrow"><a href="selfintro.html">My Achievements</a></li>
+        </ul>
+        </div>     
+    </div>
+    <br>
+    <div class="dottedline"></div>
+    <p class="copyright">All Rights Reserved.Developed By Yeoh Jeh Herne 2024</p>
 </body>
 
 </html>

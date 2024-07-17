@@ -64,12 +64,11 @@ body,html{
     display: flex;
     background-color: black;
 }
+.second p:hover{
+    color:green;
+}
 .subsecond{
     flex:1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 .subsecond a{
     display: flex;
@@ -81,12 +80,6 @@ body,html{
     width:30%;
 }
 @media screen and (min-width:750px){
-    .second p{
-        font-size:100%;
-        position: relative;
-        bottom:25%;
-    }
-
     .subsecond a{
         display: flex;
         text-decoration: none;
@@ -99,13 +92,13 @@ body,html{
 .autotype{
     color:rgb(216, 216, 92);
 }
-h1{
-    font-size: 100%;
-    color:rgb(218, 240, 19);
-}
 .line{
     border-bottom: .2em solid rgb(218, 240, 19);
     padding-bottom: .3%;
+}
+.aboutus h1{
+    font-size: 100%;
+    color:rgb(218, 240, 19);
 }
 .aboutus img{
     width:100%;
@@ -206,7 +199,7 @@ h1{
 }
 .myachievements h1{
     color:rgb(218, 240, 19);
-    font-size: 75%;
+    font-size: 80%;
 }
 .myachievementstext{
     padding-left: 5%;
@@ -259,26 +252,81 @@ h1{
     color:rgb(218, 240, 19);
     padding-top: 20%;
     padding-right: 5%;
-    font-size: 90%;
+    font-size: 100%;
 }
 .subform{
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 10%;
+    border: 3px solid yellowgreen;
     border-radius: 10%;
+    height:70%;
+}
+#subform1{
+    margin-top: 10%;
 }
 @media screen and (min-width:750px){
     .form h1{
         font-size: 200%;
-        padding-top: 5%;
+        padding-top: 0%;
     }
-    .formed{
-        display: grid;
-        grid-template-rows: 20% 20% 20% 30% 10%;
-        align-items: stretch;
-        justify-content: stretch;
+}
+
+
+.ending{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    word-wrap: break-word;
+    margin-top: 10%;
+    background-color: black;
+}
+.ending img{
+    width:90%;
+    border-radius: 20%;
+}
+.ending li{
+    position: relative;
+    right:10%;
+    font-size: 80%;
+}
+.popularlinks a{
+    text-decoration: none;
+    color: inherit;
+}
+.ending p, .ending li{
+    color:white;
+}
+.map{
+    list-style-image: url('map.svg');
+}
+.phones{
+    list-style-image: url('phone.svg');
+}
+.mails{
+    list-style-image: url('mails.svg');
+}
+.arrow{
+    list-style-image: url('arrow.svg');
+}
+
+.dottedline{
+    border-top: dotted black 5px;
+}
+.copyright{
+    text-align: center;
+    font-size: 60%;
+}
+@media screen and (min-width:750px){
+    .copyright{
+        font-size:80%;
     }
-    .subform{
-        width:150%;
-        height:125%;
+    .ending p{
+        position: relative;
+        left:20%;
+        font-size: 150%;
+    }
+    .ending li{
+        position: relative;
+        left:20%;
+        font-size: 120%;
     }
 }
