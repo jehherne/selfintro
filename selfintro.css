@@ -326,15 +326,16 @@ body,html{
     }
 }
 
-.achievementfirst{
+.achievementfirst,#blackbackground{
     position: relative;
-    bottom:5%;
+    bottom:6%;
 }
-.achievementfirst h1{
+.achievementfirst h1,#blackbackground{
     background-color: black;
     color: white;
     text-align: center; 
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 #smaller{
     text-align: center;
@@ -374,6 +375,10 @@ body,html{
 
 
 @media screen and (min-width:750px){
+    .achievementfirst,#blackbackground{
+        position: relative;
+        bottom:5%;
+    }
     .achievementfirst h1{
         background-color: black;
         color: white;
