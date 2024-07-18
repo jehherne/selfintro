@@ -377,7 +377,7 @@ body,html{
 @media screen and (min-width:750px){
     .achievementfirst,#blackbackground{
         position: relative;
-        bottom:5%;
+        bottom:5.5%;
     }
     .achievementfirst h1{
         background-color: black;
@@ -513,6 +513,9 @@ body,html{
     margin-left:40%;
 }
 @media screen and (min-width:750px){
+    #blackbackground{
+        font-size: 300%;
+    }
     .aboutusstart h1{
         font-size: 295%;
         position: relative;
