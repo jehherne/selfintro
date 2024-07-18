@@ -328,7 +328,7 @@ body,html{
 
 .achievementfirst,#blackbackground{
     position: relative;
-    bottom:6%;
+    bottom:-2%;
 }
 .achievementfirst h1,#blackbackground{
     background-color: black;
