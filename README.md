@@ -1,4 +1,4 @@
 # selfintro
-A Self Introduction Website
-Third Sentence
-I am editing the README file. Adding some more details about the project description.
+Coursera University of Michigan Web Design Course
+My Capstone Project
+A Website About Myself
